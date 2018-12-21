@@ -1,0 +1,22 @@
+@import 'variables';
+
+
+// GENERAL SETUP STYLES
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+html, body {
+  font-size: 20px;
+  width: 100vw;
+  margin: 0;
+  color: $offBlack;
+  background: #fff;
+  font-family: $font;
+
+  * {
+    box-sizing: border-box; 
+  }
+}
+
+
+// YOUR STYLING BELOW
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

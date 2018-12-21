@@ -1,0 +1,252 @@
+<!-- REMOVE THIS COMMENT BEFORE SUBMITTING 
+
+For your convenience, included in this boilerplate is a basic grunt file.
+
+To use, change directory to this exercise directory 
+and install node packages using 'npm install', then run 'grunt watch'.
+
+Alternatively, feel free to use your own task runner file.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" sizes="16x16" href="favicon-16.png?v=1.1">
+  <link rel="icon" sizes="32x32" href="favicon-32.png?v=1.1">
+
+  <title>| NEW Zach Wiest Challenge Page</title>
+
+  <!--
+  
+  DONT WORRY ABOUT ADDITIONAL META TAGS FOR THIS EXERCISE
+
+  -->
+
+  <!-- STYLESHEETS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/8.0.0/sanitize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- 
+  The Google Material Icon list can be found @ https://material.io/tools/icons/
+
+  Insert these icons using an <i> tag with the class .material-icons 
+  and inserting the accompanying icon name found on that site
+
+  You can manipulate the size and color of these icons just using CSS like you would a font!
+
+  ALL OF THE ICONS NEEDED FOR THIS EXERCISE ARE LISTED BELOW
+  -->
+
+
+
+  <!-- OUTERFLEX CLASS ======== THE GRID CONTROLLING THE RESPONSIVE SHIFTS OF THE BOXES WHEN DRAGGING THE BROWSER -->
+  <!-- BOX CLASS ======= THE 21 BOXES INSIDE OF THE OUTERFLEX CLASS-->
+  <!-- SPAN CLASS GREYDOT ======== THE GREY DOT IN THE LEFT HAND CORNER OF EACH OF THE 21 BOXES-->
+  <!-- LIVE + SCHEDULED + PAST + DRAFT + SUGGESTED + CANCELLED + NOTPUBLISHED ARE ALL CLASSES ======== THE INFORMATION IN THE TOP RIGHT CORNER OF THE INFORMATION BOXES-->
+  <!-- CALENDAR ID ======= IS THE MATERIAL ICON EVENT WHICH IS CONTROLLING CALENDER SIZE AND POSITION WITHIN THE LOWER LEFT CORNER OF THE BOX-->
+  <!-- CALENDARTEXT CLASS ======== THE DATE NEXT TO THE CALENDAR ID WITHIN THE LOWER LEFT CORNER OF THE BOX-->
+  <!-- PERSONRATIOTEXT CLASS ====== THE TEXT RATIO NEXT TO THE PERSON ID IN THE LOWER RIGHT CORNER OF THE BOX-->
+  <!-- PERSON ID ====== SUPERVISOR_ACCOUNT MATERIAL ICON IN THE LOWER RIGHT CORNER OF THE BOX-->
+
+
+
+  <nav class="navbar">
+    <span class="navbar-toggle" id="js-navbar-toggle">
+      <i class="fas fa-bars"></i>
+    </span>
+    <button type="button"><i class="material-icons" id="create">add_circle</i>Create</button>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <a href="#" class="nav-links">Home</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Products</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">About Us</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Contact Us</a>
+      </li>
+      <li>
+        <a href="#" class="nav-links">Blog</a>
+      </li>
+      <li>
+        <i class="material-icons" id="rightnavicons">search</i>
+      </li>
+      <li>
+        <i class="material-icons" id="rightnavicons">view_stream</i>
+      </li>
+      <li>
+        <i class="material-icons" id="rightnavicons">filter_list</i>
+      </li>
+      <li>
+        <i class="material-icons" id="rightnavicons">view_module</i>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="outerflex">
+
+    <!-- Box 1-->
+    <div class="box"><span class="greydot"></span>Share<div class="live">LIVE</div>
+      <div class="directions">Share an image of your festival outfit! Share an image of your</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 3 - 25</div>
+      <div class="personratiotext">30 / 75</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 2-->
+    <div class="box"><span class="greydot"></span>Share<div class="scheduled">SCHEDULED</div>
+      <div class="directions">Share an image of your festival outfit! Share an image of your</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 13 - Dec 5</div>
+      <div class="personratiotext">100 / 230</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 3-->
+    <div class="box"><span class="greydot"></span>Instagram<div class="past">PAST</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Oct 25 - Nov 6</div>
+      <div class="personratiotext">74 / 75</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 4-->
+    <div class="box"><span class="greydot"></span>Manual<div class="draft">DRAFT</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 5-->
+    <div class="box"><span class="greydot"></span>Manual<div class="suggested">SUGGESTED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 6-->
+    <div class="box"><span class="greydot"></span>Manual<div class="cancelled">CANCELLED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 7-->
+    <div class="box"><span class="greydot"></span>Manual<div class="notpublished">NOT PUBLISHED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 8-->
+    <div class="box"><span class="greydot"></span>Share<div class="live">LIVE</div>
+      <div class="directions">Share an image of your festival outfit! Share an image of your</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 3 - 25</div>
+      <div class="personratiotext">30 / 75</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 9-->
+    <div class="box"><span class="greydot"></span>Share<div class="scheduled">SCHEDULED</div>
+      <div class="directions">Share an image of your festival outfit! Share an image of your</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 13 - Dec 5</div>
+      <div class="personratiotext">100 / 230</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 10-->
+    <div class="box"><span class="greydot"></span>Instagram<div class="past">PAST</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">October 25 - Nov 6</div>
+      <div class="personratiotext">74 / 75</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 11-->
+    <div class="box"><span class="greydot"></span>Manual<div class="draft">DRAFT</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 12-->
+    <div class="box"><span class="greydot"></span>Manual<div class="suggested">SUGGESTED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 13-->
+    <div class="box"><span class="greydot"></span>Manual<div class="cancelled">CANCELLED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 14-->
+    <div class="box"><span class="greydot"></span>Manual<div class="notpublished">NOT PUBLISHED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 15-->
+    <div class="box"><span class="greydot"></span>Manual<div class="live">LIVE</div>
+      <div class="directions">Share an image of your festival outfit! Share an image of your</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 3 - 25</div>
+      <div class="personratiotext">30 / 75</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 16-->
+    <div class="box"><span class="greydot"></span>Share<div class="scheduled">SCHEDULED</div>
+      <div class="directions">Share an image of your festival outfit! Share an image of your</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 13 - Dec 5</div>
+      <div class="personratiotext">100 / 230</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 17-->
+    <div class="box"><span class="greydot"></span>Instagram<div class="past">PAST</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Oct 25 - Nov 6 </div>
+      <div class="personratiotext">74 / 75</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 18-->
+    <div class="box"><span class="greydot"></span>Manual<div class="draft">DRAFT</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 19-->
+    <div class="box"><span class="greydot"></span>Manual<div class="suggested">SUGGESTED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 20-->
+    <div class="box"><span class="greydot"></span>Manual<div class="cancelled">CANCELLED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+    <!-- Box 21-->
+    <div class="box"><span class="greydot"></span>Manual<div class="notpublished">NOT PUBLISHED</div>
+      <div class="directions">Post the new festival lineup to your instagram</div>
+      <i class="material-icons" id="calendar">event</i>
+      <div class="calendartext">Nov 25 - Dec 12</div>
+      <div class="personratiotext">0 / 130</div><i class="material-icons" id="person">supervisor_account</i>
+    </div>
+  </div>
+
+  </div>
+</body>
+
+</html>
